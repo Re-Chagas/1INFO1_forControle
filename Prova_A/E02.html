@@ -8,10 +8,21 @@
 
     //Entrada
 
+    let frase = Array.from("O rato roeu a roupa do rei de Roma");
+    console.log(frase)
+    let vogal = prompt(`me informe uma vogal`).toLowerCase()
+    let qntVogal = 0;
 
     //Processamento
 
+    for (let i = 0; i <  frase.length ; i++) {
+        if (frase[i] == vogal) {
+            qntVogal++
+        }
+    }
 
     //Saída
+
+    document.write(`a quantidade que essa vogal se repete é ${qntVogal}`)
 
 </script>

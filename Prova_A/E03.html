@@ -10,10 +10,24 @@
 
     //Entrada
 
-
+    let ListaNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let NumInt = Number(prompt(`me informe um numero inteiro`)) 
+    let MenorOuIg = []
+    let Maior = []
     //Processamento
 
+    for (let i = 0; i < ListaNum.length; i++) {
+        if (ListaNum[i] <= NumInt) {
+            MenorOuIg.push(ListaNum[i])
+        }
+        if (ListaNum[i] > NumInt) {
+            Maior.push(ListaNum[i])
+        }
+    }
 
     //Saída
+
+    document.write(`- Grupo 1: menores ou iguais a ${NumInt}: ${MenorOuIg} <br>
+                    - Grupo 2: maiores do que ${NumInt}: ${Maior}`)
 
 </script>
